@@ -9,13 +9,21 @@ import { HomeComponent } from './home/home.component';
 import { httpInterceptorProviders } from './helpers/http.interceptor';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { ProfileComponent } from './profile/profile.component';
+import { BoardUserComponent } from './board-user/board-user.component';
+import { BoardModeratorComponent } from './board-moderator/board-moderator.component';
+import { BoardAdminComponent } from './board-admin/board-admin.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     RegisterComponent,
-    HomeComponent
+    HomeComponent,
+    ProfileComponent,
+    BoardUserComponent,
+    BoardModeratorComponent,
+    BoardAdminComponent
   ],
   imports: [
     BrowserModule,

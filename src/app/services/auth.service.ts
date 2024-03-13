@@ -28,4 +28,16 @@ export class AuthService {
   logout(): Observable<any> {
     return this.http.post(URL_API + 'signout', { }, httpOptions);
   }
+
+  register(username: string, email: string, password: string): Observable<any> {
+    return this.http.post(
+      URL_API + 'auth/signup',
+      {
+       // username,
+       "email": email,
+       "password": password
+      },
+      httpOptions
+    );
+}
 }
